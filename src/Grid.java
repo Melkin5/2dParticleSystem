@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * @author Matthew Elkin
+ * This class acts as a grid square which contains an array of particles within certain coordinate bounds
+ * in order to reduce computational load for collison detection
+ */
 public class Grid {
     public int x,y;//top left
     //top right =(x+sizeX,y)

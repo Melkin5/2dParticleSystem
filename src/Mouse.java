@@ -1,6 +1,9 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * Mouse 
+ */
 public class Mouse implements MouseListener {
     public Panel p;
     public Mouse(Panel p) {

@@ -4,6 +4,9 @@ import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * This class deals with draing and most of coordinate logic
+ */
 public class Panel extends JPanel {
     public Grid[][] grid=new Grid[10][20];
     public ArrayList<Particle> particles;
@@ -24,6 +27,10 @@ public int screenWidth, screenHeight;
         this.m = new Mouse(this);
         this.addMouseListener(m);
     }
+
+    /**
+     * Sets up grid
+     */
     public void populateArray() {
         int cellWidth = 1900 / grid[0].length; // Width of each cell (20 cells along x-axis)
         int cellHeight = 1030 / grid.length;  // Height of each cell (10 cells along y-axis)
@@ -36,6 +43,13 @@ public int screenWidth, screenHeight;
             }
         }
     }
+
+    /**
+     *
+     * @param x
+     * @param y
+     * adds particle to system
+     */
     public void addParticle(int x, int y) {
         particles.add(new Particle(x,y,rand.nextDouble(-0.01,0.01),rand.nextDouble(0,180),rand.nextDouble(-0.5,0.5)));
 

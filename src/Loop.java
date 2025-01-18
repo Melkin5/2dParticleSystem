@@ -1,3 +1,8 @@
+/**
+ * @author Matthew Elkin
+ * This class acts as the main loop and uses multithreading so performance isnt fucking awful
+ * also includes core application loop
+ */
 public class Loop implements Runnable {
     private Frame f; // Frame that contains the game view
     private Panel p; // Game object that holds the logic of the game
